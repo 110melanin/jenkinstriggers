@@ -1,0 +1,8 @@
+ environment {
+        registryCredential = 'ecr:eu-west-2:awscreds'
+        appRegistry = "668178087276.dkr.ecr.eu-west-2.amazonaws.com/vprofileappimg"
+        vprofileRegistry = "https://668178087276.dkr.ecr.eu-west-2.amazonaws.com"
+		  cluster = "vprofile"
+		  service = "vprofileappsvc"
+		  
+    }
