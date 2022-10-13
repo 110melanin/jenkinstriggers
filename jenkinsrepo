@@ -1,8 +1,10 @@
- environment {
-        registryCredential = 'ecr:eu-west-2:awscreds'
-        appRegistry = "668178087276.dkr.ecr.eu-west-2.amazonaws.com/vprofileappimg"
-        vprofileRegistry = "https://668178087276.dkr.ecr.eu-west-2.amazonaws.com"
-		  cluster = "vprofile"
-		  service = "vprofileappsvc"
-		  
-    }
+stage ('CODE ANALYSIS WITH CHECKSTYLE'){
+            steps {
+                sh 'mvn checkstyle:checkstyle'
+            }
+            post {
+                success {
+                    echo 'Generated Analysis Result'
+                }
+            }
+        }
