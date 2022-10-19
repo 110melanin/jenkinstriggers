@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 pipeline {
    agent any
     stages {
@@ -8,3 +9,6 @@ pipeline {
       }
     } 
   }
+=======
+echo "WELL DONE BROTHER"
+>>>>>>> 74ea784b0d647feaabf1263ce4ba54d052ebc382
